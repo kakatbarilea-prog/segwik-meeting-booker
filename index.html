@@ -394,14 +394,21 @@
         <h1 class="title">[meeting.parent_name]</h1>
 
         <div class="meta">
-          <span class="pill">[meeting.duration]</span>
+          <span class="pill">Duration: [meeting.duration]</span>
           <span class="pill">
             <span class="dot"></span> 
-            [meeting.zoom.join_url]
+            Virtual Link: [meeting.zoom.join_url]
           </span>
-          <span class="pill">[meeting.start_time_utc|"format":"z"]</span>
+          
         </div>
+        <br>
+        <div class="meta">
+<span class="pill">Timezone: [meeting.start_time_utc|"format":"z"]</span>
+</div>
+
       </header>
+
+
 
       <section class="step" id="stepPick">
         <h4>Select a Date & Time</h4>
